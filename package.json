@@ -6,12 +6,19 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "ts": "node -r ts-node/register",
     "build": "webpack --mode production",
     "start": "webpack && qode ./dist/index.js",
     "debug": "webpack && qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.36.0"
+    "@cryptoket/ts-memoize": "^1.0.14",
+    "@nodegui/nodegui": "^0.46.0",
+    "@types/node-ipc": "^9.2.0",
+    "kuroshiro": "^1.2.0",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0",
+    "node-ipc": "^10.1.0",
+    "ts-node": "^10.6.0"
   },
   "devDependencies": {
     "@nodegui/packer": "^1.4.1",
